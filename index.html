@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-...your-sha512-hash-here..."
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    <script src="jquery.js"></script>
+    <title>Employees Table</title>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Employees Table</h2>
+      <button id="add">Add New Employee</button>
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div
+      id="editForm"
+      style="display: none"
+    >
+      <h2>Edit Employee</h2>
+      <form id="employeeEditForm">
+        <input
+          type="hidden"
+          id="editEmployeeId"
+          name="id"
+        />
+        <div class="form-group">
+          <label for="editName">Name</label>
+          <input
+            type="text"
+            id="editName"
+            name="name"
+          />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="editAge">Age</label>
+          <input
+            type="text"
+            id="editAge"
+            name="age"
+          />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="editAddresses">Addresses</label>
+          <div id="editAddressesContainer"></div>
+
+          <button
+            type="button"
+            id="addAddressButton"
+            class="btn-add-address"
+          >
+            <i class="fas fa-plus"></i>
+          </button>
+          <span class="error-message"></span>
+        </div>
+        <div class="btns">
+          <button type="submit">Submit</button>
+          <button
+            type="button"
+            id="cancelbutton"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

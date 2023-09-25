@@ -1,0 +1,162 @@
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+th {
+  background-color: #ca5656;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr {
+  border: 1px solid #ca5656;
+  text-align: center;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #dddddd;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  text-align: center;
+  background-color: #fff;
+}
+
+button {
+  background-color: #ca5656;
+  border-radius: 4px;
+  padding: 7px;
+  margin: 5px;
+  width: 70px;
+}
+
+button:hover {
+  background-color: #f1aaaa
+}
+
+button:active {
+  background-color: #f1aaaa;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#add {
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+#editForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 600px;
+  height: 400px;
+  z-index: 999;
+}
+
+#editForm form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  height: 300px;
+}
+
+#employeeTable {
+  position: relative;
+  z-index: 1;
+}
+
+.form-actions {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.form-actions button {
+  margin-left: 10px;
+}
+
+.btn-add-address {
+  background-color: #ca5656;
+  color: #fff;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline;
+}
+
+.btn-add-address i {
+  margin-right: 5px;
+  font-size: 16px;
+  display: inline;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  flex: 1;
+}
+
+.form-group input[type="text"] {
+  flex: 3;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.form-group .btn-add-address {
+  background-color: #ca5656;
+  color: #fff;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.form-group .btn-add-address i {
+  margin-right: 5px;
+  font-size: 16px;
+  display: inline;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: small;
+}
